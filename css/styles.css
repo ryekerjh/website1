@@ -1,0 +1,326 @@
+shtml, body {
+    height:100%;
+    
+}
+body {
+    margin:0px;
+    padding:0px;
+    background-color:#ffffff;
+    font-family:'Oswald', Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:700;
+    color:#000000;
+}
+
+@media screen and (max-width:1200p) {
+    h1 {font-size:1em;}
+    .container {
+        width:100%;
+        
+    }
+    #featured .align-right {
+        float: none;
+        width:100%;
+        
+    }
+    #featured .alight-left {
+        width:100%;
+        float:none;
+    }
+}
+h1,h2,h3{
+    margin:0px;
+    padding:0px;
+    color:#000;
+}
+p {
+    line-height:150%;
+}
+p, ul{
+margin:0px;
+}
+ul {
+    padding:0px;
+    list-style:none;
+}
+strong, b {
+    color:#FF3300; /*this color is bright orange*/
+} 
+a {
+   color:#00FF00;
+   text-decoration:none;
+}
+a:hover{
+  color:#FF9933; /*this is orange*/
+}
+.container{
+    overflow:hidden;
+    width:1200px;
+    margin:0px auto;
+}
+/*BANNER SECTION*/
+
+.bannerTitle{
+    color:#00ff00;
+    font-size:2em;
+}
+.bannerTitle a{
+    color:#fff;
+    font-size: 2em;
+    text-decoration:none;
+}
+.bannerTitle:hover{
+    /*color:#00ff00;*/
+    text-decoration:none;
+}
+#banner{
+    overflow:hidden;
+    padding:120px 0px;
+    border-top:3px solid #999966;
+    background-size: cover;
+    background: url(../images/banner.jpg) no-repeat center #8DC63F; /*this is your fallback color that will be used if your image isnt found*/
+}
+#bannerabout{
+    overflow:hidden;
+    padding:120px 0px;
+    border-top:3px solid #999966;
+    background-size: cover;
+    background: url(../images/bannerabout.jpg) no-repeat center #8DC63F;
+}
+#bannercontact{
+    overflow:hidden;
+    padding:120px 0px;
+    border-top:3px solid #999966;
+    background-size: cover;
+    background: url(../images/bannercontact.jpg) no-repeat center #8DC63F;
+}
+.bannerCenter{
+    overflow:hidden;
+    width:60%;
+    margin:0px auto;
+    text-align:center;
+}
+.bannerCenter p {
+    color:#fff;
+}
+/*HEADER SECTION--NAVIGATION*/
+#header{
+    position:relative;
+    padding:5px 0px;
+}
+#logo a{
+    text-decoration:none;
+    color:#00FF00;
+}
+#logo a:hover{
+    text-decoration:none;
+    color:#FF9933;
+}
+/*MENU SECTION*/
+#menu{
+    position:absolute;
+    top:7.8em;
+    right:5%;
+    /*list-style:horizontal;*/
+}
+#menu ul{
+    display:inline-block;
+}
+#menu li{
+    display:block;
+    float:left;
+    text-align:center;
+}
+#menu li:after{
+    content:"|";/*This is the separator between the nav menu items*/
+    padding:16px 20px;
+    font-weight:600;
+    color:#000;
+}
+#menu li a, #menu li span{
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:1em;
+    color:#00ff00;
+}
+#menu li:hover {
+    color:#FF9933;/*THIS DOESNT WORK */
+    font-size:1.2em;
+}
+#menu ul li .active {
+    color:#FF9933;/*THIS DOESNT WORK */
+    font-size:1.2em;
+}
+
+/*BUTTON STYLES*/
+a.button{
+    display:inline-block;
+    padding:10px 15px;
+    background-color:#B8B894;
+    letter-spacing:3px;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:bold; /*this can also be a number, but bold works, too*/
+    font-size:1.1em; /*1em is standard font size*/
+    color:#000;
+    border-radius:4px;
+}
+a.button:hover{
+    color:#FFFF00;
+    /*text-decoration:none; I took this out because our global .a target gave all the links on the page no text decoration*/
+}
+
+/*THREE COLUMNS SECTION*/
+.boxA, .boxB, .boxC{
+    width:384px;
+    
+}
+.boxA h2, .boxB h2, .boxC h2{
+    font-weight:600;
+    font-size:2.5em;
+    text-align:center;
+    
+}
+.boxA, .boxB{
+    float:left;
+    margin-right:24px;
+}
+.boxC{
+    float:left;
+}
+.box span{
+    background-color:#FF9933;
+    color:#fff;
+    display:block;
+    font-size:2em;
+    font-weight:600;
+    line-height:1em;
+    letter-spacing:.05em;
+    margin:1px;
+    padding:1em;
+    text-align:center;
+    text-transform:uppercase;
+    
+}
+#familybox {
+    font-size:.9em;
+}
+/*ABOUT SECTION*/
+
+#featured .align-left{
+    float:left;
+    padding-top:20px;
+    /*padding-bottom:2em;*/
+    width:300px;
+    margin-left:10px;
+    /*position:relative;*/
+}
+#featured .align-right{
+    float:right;
+    width:775px;
+    /*font-size:1em;*/
+    /*padding-top:10px;*/
+    margin-top:16px;
+    /*margin-bottom:15px;*/
+    /*margin-left: 100px;*/
+}
+/*.aboutme p {*/
+/*    float:right;*/
+/*    width:500px;*/
+/*    height:120px;*/
+/*}*/
+/*.aboutme {*/
+/*    margin: 1.5em;*/
+
+/*}*/
+
+/*#GetMy {*/
+/*    width:100%;*/
+/*}*/
+
+/*FOOTER SECTION*/
+
+
+#copyright {
+    overflow:hidden; /*gets rid of scroll bars if this is zoomed in*/
+    padding:5px/*30px*/ 0px;
+    border-top: 2px dotted #3366FF;
+    background-color:#e1e1e1;
+    width:100%;
+    display:block;
+    margin-top:15px;
+}
+#copyright p {
+    letter-spacing:2px;
+    text-align:center;
+    font-size:1em;
+    color:#000;
+}
+
+
+#copyright a {
+    color:#000;
+}
+
+#copyright a:hover{
+    /*text-transform:uppercase;*/
+    color:#191975;
+}
+
+/*SOCIAL MEDIA STUFF*/
+
+.fa {
+    background-color:rgba(141, 198, 63, .9);
+    border: 3px groove #E3E6E3;
+    border-radius: /*200px;*/175px;
+    font-size: 1em;
+    margin: 13px;
+    padding:10px;
+    width:40px;
+    height:40px;
+    color:#fff;
+}
+.fa:hover {
+     font-size: 3.3em;
+}
+.fa-facebook {
+    background-color:#143D66;
+}
+.fa-twitter {
+    background-color:#69B4E6;
+}
+.fa-instagram {
+    background-color:#996633;
+}
+.fa-youtube-play {
+    background-color:#D11919;
+}
+
+#googlemap {
+    margin:20px 0px;
+    border:10px solid #000;
+    width:1000px;
+    /*height:200px;*/
+}
+.youtubevideo {
+   width:100%;
+   margin: 0 auto;
+}
+#youtubevideoholder {
+    width:100%;
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:30px;
+    height: 0;
+    overflow: hidden;
+}
+#youtubevideoholder iframe, .video-container object, .video-container embed
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
